@@ -1,6 +1,18 @@
-body, html {
+/* body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+ html, body {
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  margin: 0;
+  padding: 0;
 }
+
 
 .navbar-admin {
   position: fixed;
