@@ -79,8 +79,8 @@
   flex-direction: column;
   height: calc(100vh - 70px); /* navbar height approx 70px */
   padding-top: 20px;
+  overflow: hidden; /* prevents whole page scroll */
 }
-
 /* Add Artwork Form */
 .add-art {
   background: #ffffff;
@@ -142,14 +142,15 @@
 /* Artworks List */
 .art-list {
   background: #ffffff;
-  width: 90%;         /* occupy 90% of viewport width */
-  max-width: none;    /* remove previous restriction */
-  margin: 20px auto 0 auto; /* center horizontally with top gap */
+  width: 90%;         
+  max-width: none;    
+  margin: 20px auto 0 auto; 
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
-  overflow-y: auto;   /* scrollable */
-  flex: 1;            /* take remaining space */
+  overflow-y: auto;   
+  flex: 1;            
+  max-height: calc(100vh - 70px - 220px); /* navbar + form height ~220px */
 }
 
 .art-list h3 {
